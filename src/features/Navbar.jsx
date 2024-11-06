@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   const sendEmail = () => {
-    var mail = "mailto:contact@girmantech.com.";
+    var mail = "mailto:contact@girmantech.com";
     var a = document.createElement("a");
     a.href = mail;
     a.click();
@@ -47,7 +47,7 @@ const Navbar = () => {
     <div className="fixed top-0 w-full bg-transparent">
       <div className="mx-2">
         <div className="container mx-auto py-4">
-          <div className="flex justify-between">
+          <div className="flex justify-between gap-6">
             <Link to="/">
               <img src={girmanLogo} alt="logo" />
             </Link>
