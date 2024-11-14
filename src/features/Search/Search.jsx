@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import userList from "../../lib/user_list.json";
 import Card from "@/Common/Card";
+import NotFound from "./NotFound";
 
 const search = () => {
   const [filteredUsers, setFilteredUsers] = useState([]);
@@ -27,11 +28,17 @@ const search = () => {
   useEffect(() => {
     fetchData();
   }, [searchQuery]);
-  
+
   return (
-    <div className="flex flex-row flex-wrap mt-28">
-      <Card element={filteredUsers} />
-    </div>
+    <>
+      {filteredUsers.length > 0 ? (
+        <div className="flex flex-row flex-wrap">
+          <Card element={filteredUsers} />
+        </div>
+      ) : (
+        <NotFound />
+      )}
+    </>
   );
 };
 

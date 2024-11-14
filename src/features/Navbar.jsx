@@ -44,7 +44,7 @@ const Navbar = () => {
     a.click();
   };
   return (
-    <div className="fixed top-0 w-full bg-transparent">
+    <div className=" top-0 w-full bg-transparent">
       <div className="mx-2">
         <div className="container mx-auto py-4">
           <div className="flex justify-between gap-6">
@@ -58,7 +58,7 @@ const Navbar = () => {
                 type={"text"}
                 onTextChange={handleChange}
                 onKeyDownPress={onKeyPressed}
-                className="w-1/2 bg-white h-10 rounded-lg p-4"
+                className="w-1/2 bg-white h-10 rounded-lg p-4 border border-black focus:border-2"
               />
             ) : (
               <div className="flex">

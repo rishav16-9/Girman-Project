@@ -6,7 +6,8 @@
 }
 body {
   background-image: radial-gradient(skyblue, white);
-
+  height: calc(100vh-3rem);
+  background-size: cover;
 }
 .logo {
   height: 6em;

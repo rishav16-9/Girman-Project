@@ -34,7 +34,7 @@ const Home = () => {
           type={"text"}
           onTextChange={handleChange}
           onKeyDownPress={onKeyPressed}
-          className="w-1/2 bg-white h-10 rounded-lg p-4"
+          className="w-1/2 bg-white h-10 rounded-lg p-4 border border-black focus:border-2"
         />
       </div>
     </>
